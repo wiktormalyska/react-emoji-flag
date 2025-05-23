@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 const fontUrl = "https://country-flag.proca.app/font/TwemojiCountryFlags.woff2";
 const fontName = "countryFlags";
 const className = "country-flag";
+import PropTypes from "prop-types";
 let hasEffectRun = false;
 
 const nativeFlag = () => {
@@ -54,6 +55,8 @@ export const flag = (isoCode) => {
   // U+1F6A9
 };
 
+
+
 export const CountryFlag = (props) => {
   const cn = props?.className || className;
   useCountryFlag({ className: cn }); // load the font and create style if needed
@@ -64,12 +67,10 @@ export const CountryFlag = (props) => {
   );
 };
 
-/*
 CountryFlag.propTypes = {
-  title: PropTypes.node,
-  countryCode: PropTypes.node,
-  className: PropTypes.node,
-};
-*/
+  title: PropTypes.string,
+  countryCode: PropTypes.string.isRequired,
+  className: PropTypes.string,
+}
 
 export default CountryFlag;
