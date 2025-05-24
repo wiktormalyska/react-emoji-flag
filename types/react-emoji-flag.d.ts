@@ -1,4 +1,4 @@
-declare module 'react-emoji-flag' {
+declare module 'ts-react-emoji-flag' {
     import * as React from 'react';
 
     export interface CountryFlagProps {
