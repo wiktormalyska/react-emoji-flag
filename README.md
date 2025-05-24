@@ -14,9 +14,9 @@ Example: "🇨🇭" (If this looks like a Swiss flag, your system supports emoji
 ## Installation
 
 ```bash
-npm install react-emoji-flag
+npm install ts-react-emoji-flag
 # or
-yarn add react-emoji-flag
+yarn add ts-react-emoji-flag
 ```
 
 ## Usage
@@ -24,7 +24,7 @@ yarn add react-emoji-flag
 ### Basic Component Usage
 
 ```jsx
-import CountryFlag from 'react-emoji-flag';
+import CountryFlag from 'ts-react-emoji-flag';
 
 function MyComponent() {
   return <CountryFlag countryCode="US" title="United States" />;
@@ -34,7 +34,7 @@ function MyComponent() {
 ### Alternative Usage with Hook and Function
 
 ```jsx
-import { useCountryFlag, flag } from 'react-emoji-flag';
+import { useCountryFlag, flag } from 'ts-react-emoji-flag';
 
 function MyComponent() {
   // Initialize the flag support
@@ -81,7 +81,7 @@ flag("DE"); // Returns a JSX element with the German flag emoji
 This library includes TypeScript definitions. Example usage with TypeScript:
 
 ```tsx
-import CountryFlag, { useCountryFlag, flag } from 'react-emoji-flag';
+import CountryFlag, { useCountryFlag, flag } from 'ts-react-emoji-flag';
 
 const MyComponent: React.FC = () => {
   return <CountryFlag countryCode="CA" title="Canada" />;
